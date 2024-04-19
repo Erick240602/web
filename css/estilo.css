@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@900&display=swap');
+
+/*Menu*/
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    
+    gap: 5rem;
+    position: fixed;
+    background-color: #fdf9f9ea;
+    padding: .6rem;
+    border-radius: 10px;
+
+    z-index: 1; /*pro menu se sobrepor*/
+
+}
+
+/*Título*/
+h1  {
+    
+    font-size: 4rem;
+    /*border-bottom: 1px dashed rgba(255, 0, 0, 0.247);*/
+   
+   
+}
+
+/*Imagem avião no globo e em movimento do título*/
+.img_avião {
+    width: 4rem;
+   
+}
+
+/*Avião colorido em movimento*/
+.avião_movimento {
+    /*pra animar o avião colorido*/
+    transform: translateX(-600px); /*desliza da esquerda pra direita*/
+    opacity: 0; /*saída dele transparente*/
+
+    /*pra linkar o keyframe abaixo com a parte aqui que quero animar*/
+    animation-name: avião-movimentando; /*nome da animação*/
+    animation-duration: 5s;/*velocidade*/
+    animation-timing-function: ease; 
+    animation-delay: 1;
+    
+    /*direção da animação*/
+    animation-duration: normal; /*direção*/
+    animation-fill-mode: forwards;
+    animation-play-state: running; /*estado da animação*/
+    animation-iteration-count: 1; /*quantas vezes vai ocorrer*/
+
+}
+
+/*animação pro avião colorido do título*/
+@keyframes avião-movimentando {
+    to {
+        transform: translateX(0);
+        opacity: 1; /*chegada mostrando ele*/
+
+    }
+}
+
+/*Subtítulo*/
+h3 {
+    font-size: 1.8rem;
+}
+
+
+
+/*SLIDE*/
+
+/*Seção: Escolha seu destino / História / Manual do Viajante lead pra parágrafos destaque*/
+h4, .lead {
+    margin-left: 1rem;
+}
+
+
+/*Nome do local*/
+h5 {
+    color: yellow;
+    font-weight: bolder;
+    font-size: 1.2rem;
+       
+
+}
+
+/*Onde fica*/
+h5+p {
+    color: yellow;
+    font-size: 1rem;
+    margin-bottom: -1rem;
+
+}
+
+/*Imagens do slide*/
+.img_slide {
+    /*height: 25rem;*/
+    /*width: 100%;*/
+    /*width: auto;*/
+
+}
+
+
+/*DESTINO / CARDS*/
+
+
+
+/*HISTÓRIA*/
+
+/*Nome do local*/
+.história_local { /*substitui essa class por mx-3*/
+    /*margin-left: 1rem;*/
+}
+
+/*Contando um pouco da história*/
+.história_p {
+    margin-top: -1rem;
+    margin-left: 1.6rem;
+    margin-right: 1.6rem;
+    text-align: justify;
+
+}
+
+/*TABELA LOCAIS MAIS VISITADOS EM 2023*/
+
+.tabela {
+    text-align: center;
+    margin-left: 10rem;
+    margin-right: 10rem;
+}
+
+/*Link com a fonte da tabela*/
+caption {
+    margin-left: 1.2rem;
+
+}
+
+/* MANUAL DO VIAJANTE */
+
+/*Parágrafo do título*/
+.manual_p {
+    text-align: justify; 
+
+}
+
+
+/*Div pra posicionar o botão troca de imagens e a instrução pra clicar no botão*/
+.div_botão_troca_img {
+    text-align: center;
+
+}
+
+
+/*FOOTER*/
+.link_footer {
+    margin-left: 3rem;
+
+
+}
+
+
+.hospedaje {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hospedaje h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.hospedaje p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.galeria {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.imagen {
+    width: 300px;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.imagen img {
+    width: 100%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.imagen:hover img {
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Esse trabalho foi feito por Luciene Lima*/

@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Pontos Turísticos, turismo, lembranças, paisagens">
+    <meta name="description" content="Colecione lembranças de momentos inesquecíveis na sua vida. Escolha seu destino com as dicas de pontos turísticos do nosso site.">
+    <!-- index pra página aparecer nos resultados de buscas / follow pros links dela aparecerem nas buscas -->
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Luciene Lima">
+
+    <title>Pontos Turísticos</title>
+
+     <!-- Incluindo o Bootstrap 5 via CDN (copiando os links)-->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- ícone na aba -->
+    <link rel="shortcut icon" href="imagens/rota.png" type="image/x-icon">
+
+    <!-- Linkar os ícones do instagram, youtube, github...: CDN-->
+    <script src="https://kit.fontawesome.com/7d79481767.js" crossorigin="anonymous"></script>
+
+    <!-- Linkar css -->
+    <link rel="stylesheet" href="css/estilo.css">
+
+    <!-- Linkar responsivo css -->
+    <link rel="stylesheet" href="css/responsivo.css">
+    
+</head>
+
+
+<body class="bg-light">
+
+    <!-- NAVBAR (Barra de navegação) -->
+
+    <!-- Navbar (Barra de navegação) -->
+    <!-- navbar-expand- = a partir de qntos px pro menu se expandir -->
+    <!-- navbar-expand-lg = 992px largura; navbar-expand-md = 768px-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light bg-secundario mt-3 text">
+
+      <div class="container-fluid">
+
+        <a class="navbar-brand text-primary display-2" href="#">TDP</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <!--<ul class="navbar-nav me-auto mb-2 mb-lg-0"> mb- margem botton ; mb-lg-0 pra margem botton de telas lg de 0 -->
+           <ul class="navbar-nav me-auto position-fix">
+            <li class="nav-item">
+              <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#destinos">Destinos</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#história">Hospedaje</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#visitados">Itinerarios</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link text-primary" href="#manual">Manual do viajante</a>
+            </li>
+
+            <!-- <li class="nav-item"> 
+              <a class="nav-link text-primary" href="#">Mapa</a>
+            </li>-->
+
+            <!-- <li class="nav-item dropdown"> 
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>-->
+
+            <!-- <li class="nav-item"> 
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>-->
+          </ul>
+
+          <!-- <form class="d-flex"> 
+            <input class="form-control me-2" type="search" placeholder="Digite o produto" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisa</button>
+          </form>-->
+        </div>
+      </div>
+    </nav>
+
+
+    <!-- Título e subtítulo -->
+
+    <!-- Ícone de um avião antes e depois do título -->
+    <h1 class="text-center text-primary mt-4 mb-2"> 
+      The Dreams of Paradise
+
+      <img class="img_avião avião_movimento" src="imagens/aviao.png" alt="imagem de um avião">
+    </h1>
+    
+    <!-- Subtítulo-->    
+    <h3 class="text-center mt-1 mb-5"></h3>
+
+  
+  
+   
+    <!-- CARROSSEL / SLIDES-->
+
+    <div class="container w-10 h-auto">
+
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+
+        <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-3">
+            <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/Namsan_Tower - Copia.jpg" class="d-block w-100" alt="Pão de Açúcar">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Seul</h5>
+              <p>Torre de Seúl </p>
+            </div>
+          </div>
+
+          <!-- Ilha de Jeju, na Coreia do Sul. -->
+          <div class="carousel-item mb-3">
+            <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/Jeju.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ilha de Jeju</h5>
+              <p>Coreia do Sul.</p>
+            </div>
+          </div>
+
+          <!-- Píer de Iseltwald, Lago de Brienz, na Suíça -->
+          <div class="carousel-item mb-3">
+            <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/píer_Suíça.jpg" class="d-block w-100" alt="Píer de Iseltwald, Lago de Brienz, na Suíça">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Píer de Iseltwald</h5>
+              <p>Lago de Brienz, na Suíça.</p>
+            </div>
+          </div>
+
+          
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        
+      </div>
+
+    </div>
+
+
+    <!-- ESCOLHA O SEU DESTINO / cards-->    
+
+    <h4 id="manual" class="text-primary">Destinos:</h4>
+
+    <p class="lead mb-4">Descubre los destinos más asombrosos del mundo y prepárate para una aventura inolvidable llena de experiencias únicas y paisajes impresionantes.</p> 
+        
+
+    <div class="container row mx-auto g-4 container_card">
+ <!-- mx- auto: m=margem x=dir/esq -->
+      <!-- g-4: gap/espaço entre eles -->
+
+
+      <!-- Cancún, México -->
+
+     <div class="col-12 col-md-6 col-xl-4 pb-4">
+      <!-- md-6 pra ficar 2 cards na mesma linha >=768px
+      col-xl-4 pra ficar 3 cards na mesma linha >=1200 px -->
+      <div class="card">
+        <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="180" xmlns="http://www.w3.org/2000/svg" -->
+        <!-- role="img" aria-label="Placeholder: Image cap" preserveAspectRatio="xMidYMid slice" focusable="false"> -->
+        <img class="img_cards" src="imagens/cancún_méxico.jpg" alt="Praia de Cancún, no México">
+        <!-- <title>Cancún</title> -->
+        <p class="text-center mt-1"><strong>Cancún</strong></p>
+        <p class="text-center"><small>México</small></p>
+
+        <rect width="100%" height="100%" fill="#868e96"></rect>
+        <!-- <text x="50%" y="50%" fill="#dee2e6" dy=".3em">México</text> -->
+      
+        <div class="card-header btn">
+          <!-- <h5 class="card-title">Card title</h5> -->
+          <!-- <p class="card-text">Categoria</p> -->
+
+          <!-- Veja mais fotos -->
+          <a href="https://www.google.com/search?sca_esv=070a86fdf7893579&q=cancun+m%C3%A9xico&tbm=isch&source=lnms&prmd=imvnsbtz&sa=X&ved=2ahUKEwjRuIactpqFAxVYmZUCHWFiADIQ0pQJegQIDxAB&biw=1366&bih=607&dpr=1" class="btn btn-outline-primary btn-sm" target="_blank">Veja mais fotos</a>
+          <br>
+
+          <!-- Vídeos -->
+          <a href="https://www.youtube.com/results?search_query=Canc%C3%BAn%2C++M%C3%A9xico" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Vídeos</a>
+          <br>
+          
+          <!-- Mapa -->
+          <a href="https://www.google.com/maps/place/Canc%C3%BAn,+Quintana+Roo,+M%C3%A9xico/@21.1213186,-87.0212157,11z/data=!3m1!4b1!4m6!3m5!1s0x8f4c2b05aef653db:0xce32b73c625fcd8a!8m2!3d21.161908!4d-86.8515279!16zL20vMDFxOTht?entry=ttu" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Mapa</a>
+
+        </div>
+      </div>
+     </div>
+
+
+     <!--Cristo Redentor, RJ  -->
+
+     <div class="col-12 col-md-6 col-xl-4 pb-4">
+      
+      <div class="card">
+        
+        <img class="img_cards" src="imagens/cristo.webp" alt="Cristo Redentor, no Rio de Janeiro, Brasil">
+        <p class="text-center mt-1"><strong>Cristo Redentor</strong></p>
+        <p class="text-center"><small>Rio de Janeiro, Brasil</small></p>
+
+        <div class="card-header btn">
+          <a href="https://www.google.com/search?sca_esv=070a86fdf7893579&q=cristo+redentor&tbm=isch&source=lnms&prmd=ivmnsbtz&sa=X&ved=2ahUKEwio9oTxtpqFAxXOq5UCHfcmC88Q0pQJegQIDhAB&biw=1366&bih=607&dpr=1" class="btn btn-outline-primary btn-sm" target="_blank">Veja mais fotos</a>
+          <br>
+          <a href="https://www.youtube.com/results?search_query=Cristo+Redentor++Rio+de+Janeiro%2C+Brasil" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Vídeos</a>
+          <br>
+          <a href="https://www.google.com/maps/place/Cristo+Redentor/@-22.951916,-43.2130621,17z/data=!3m1!4b1!4m6!3m5!1s0x997fd5984aa13f:0x9dc984d7019502de!8m2!3d-22.951916!4d-43.2104872!16zL20vMDNneXR3?entry=ttu" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Mapa</a>
+        </div>
+      </div>
+     </div>
+
+     <!--Portão de Brandemburgo, Berlim, Alemanha -->
+
+   
+ 
+     <!--Namsan Tower, Seul, na Coreia do Sul -->
+     
+     <div class="col-12 col-md-6 col-xl-4 pb-4">
+      
+      <div class="card">
+        <img class="img_cards" src="imagens/Namsan_Tower - Copia.jpg" alt="Subida da Torre Namsan, em Seul, na Coréia do Sul">
+        <p class="text-center mt-1"><strong>Namsan Tower</strong></p>
+        <p class="text-center"><small> Seul, Coréia do Sul</small></p>
+
+        <div class="card-header btn">
+          <a href="https://www.google.com/search?q=Namsan+Tower%2C++Seul+na+Coreia+do+Sul&tbm=isch&ved=2ahUKEwiAy-CbuJqFAxVmKLkGHcAMCisQ2-cCegQIABAA&oq=Namsan+Tower%2C++Seul+na+Coreia+do+Sul&gs_lp=EgNpbWciJE5hbXNhbiBUb3dlciwgIFNldWwgbmEgQ29yZWlhIGRvIFN1bDIFEAAYgAQyEBAAGIAEGIoFGEMYsQMYgwEyBRAAGIAEMgYQABgHGB4yBhAAGAcYHjIGEAAYBxgeMgQQABgeMgQQABgeMgQQABgeMgQQABgeSPwHUKoEWKoEcAB4AJABAJgBkQKgAZECqgEDMi0xuAEDyAEA-AEBigILZ3dzLXdpei1pbWeIBgE&sclient=img&ei=uDUHZoCPJebQ5OUPwJmo2AI&bih=607&biw=1366&prmd=ivmnsbtz" class="btn btn-outline-primary btn-sm" target="_blank">Veja mais fotos</a>
+          <br>
+          <a href="https://www.youtube.com/results?search_query=Namsan+Tower%2C+Cor%C3%A9ia+do+Sul" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Vídeos</a>
+          <br>
+          <a href="https://www.google.com/maps/place/N+Seoul+Tower/@37.5511694,126.9856517,17z/data=!3m1!4b1!4m6!3m5!1s0x357ca257a88e6aa9:0x5cf8577c2e7982a5!8m2!3d37.5511694!4d126.9882266!16zL20vMDJxcGYx?entry=ttu" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Mapa</a>
+        </div>
+      </div>
+     </div>
+
+     
+    
+     <!--Templo do Pavilhão Dourado, em Kyoto, Japão  -->
+     
+     <div class="col-12 col-md-6 col-xl-4 pb-4">
+      
+      <div class="card">
+        <img class="img_cards" src="imagens/templo_kyoto_japao.jpg" alt="Lago e o Templo do Pavilhão Dourado, em Kyoto, no Japão">
+        <p class="text-center mt-1"><strong>Templo do Pavilhão Dourado</strong></p>
+        <p class="text-center"><small>Kyoto, Japão</small></p>
+
+        <div class="card-header btn">
+          <a href="https://www.google.com/search?q=Templo+do+Pavilh%C3%A3o+Dourado%2C+em+Kyoto%2C+Jap%C3%A3o&tbm=isch&ved=2ahUKEwiX68ftuJqFAxVPB7kGHWULDEcQ2-cCegQIABAA&oq=Templo+do+Pavilh%C3%A3o+Dourado%2C+em+Kyoto%2C+Jap%C3%A3o&gs_lp=EgNpbWciLVRlbXBsbyBkbyBQYXZpbGjDo28gRG91cmFkbywgZW0gS3lvdG8sIEphcMOjb0iUCVCPB1iPB3AAeACQAQCYAW2gAdgBqgEDMC4yuAEDyAEA-AEBigILZ3dzLXdpei1pbWeIBgE&sclient=img&ei=ZDYHZpepCs-O5OUP5ZawuAQ&bih=607&biw=1366&prmd=ivmnsbtz" class="btn btn-outline-primary btn-sm" target="_blank">Veja mais fotos</a>
+          <br>
+          <a href="https://www.youtube.com/results?search_query=Templo+do+Pavilh%C3%A3o+Dourado++Kyoto%2C+Jap%C3%A3o" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Vídeos</a>
+          <br>
+          <a href="https://www.google.com/maps/place/Templo+do+Pavilh%C3%A3o+Dourado/@35.03937,135.7266682,17z/data=!3m1!4b1!4m6!3m5!1s0x6001a820c0eb46bd:0xee4272b1c22645f!8m2!3d35.03937!4d135.7292431!16zL20vMDFrbjR3?entry=ttu" class="btn btn-outline-primary btn-sm mt-2" target="_blank">Mapa</a>
+        </div>
+      </div>
+     </div>
+
+ 
+    <!-- HISTÓRIA -->
+
+    <h1 class="text-center text-primary mt-4 mb-2"> 
+     Hospedajes de ensueño
+    
+    </h1>
+    
+    <!-- Subtítulo-->    
+    <h3 class="text-center mt-1 mb-5"></h3>
+
+    <h3 class="text-center text-primary mt-4 mb-2"> 
+      Meitetsu inn Nagoya Tokio
+     
+     </h3>
+  
+   
+    <!-- CARROSSEL / SLIDES-->
+
+    <div class="container w-10 h-auto">
+
+     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+
+        <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+        <div class="carousel-inner">
+          <div class="carousel-item active mb-3">
+            <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0001.jpg" class="d-block w-100" alt="Pão de Açúcar">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Seul</h5>
+              <p>Torre de Seúl </p>
+            </div>
+          </div>
+
+          <!-- Ilha de Jeju, na Coreia do Sul. -->
+          <div class="carousel-item mb-3">
+            <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0002.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Ilha de Jeju</h5>
+              <p>Coreia do Sul.</p>
+            </div>
+          </div>
+
+         
+
+          
+        </div>
+
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+        
+      </div>
+
+    </div>
+
+
+
+
+  
+     <!-- CARROSSEL / SLIDES-->
+     <h3 class="text-center text-primary mt-4 mb-2"> 
+      Seul Corea del sur 
+     
+     </h3>
+     <div class="container w-10 h-auto">
+ 
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+ 
+ 
+         <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+         <div class="carousel-inner">
+           <div class="carousel-item active mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0003.jpg" class="d-block w-100" alt="Pão de Açúcar">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Seul</h5>
+               <p>Torre de Seúl </p>
+             </div>
+           </div>
+ 
+           <!-- Ilha de Jeju, na Coreia do Sul. -->
+           <div class="carousel-item mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0004.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Ilha de Jeju</h5>
+               <p>Coreia do Sul.</p>
+             </div>
+           </div>
+ 
+          
+ 
+           
+         </div>
+ 
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+         
+       </div>
+ 
+     </div>
+
+
+
+
+
+     <h3 class="text-center text-primary mt-4 mb-2"> 
+      Brasil 
+     
+     </h3>
+     <div class="container w-10 h-auto">
+ 
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+ 
+ 
+         <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+         <div class="carousel-inner">
+           <div class="carousel-item active mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0010.jpg" class="d-block w-100" alt="Pão de Açúcar">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Seul</h5>
+               <p>Torre de Seúl </p>
+             </div>
+           </div>
+ 
+           <!-- Ilha de Jeju, na Coreia do Sul. -->
+           <div class="carousel-item mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0009.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Ilha de Jeju</h5>
+               <p>Coreia do Sul.</p>
+             </div>
+           </div>
+ 
+          
+ 
+           
+         </div>
+ 
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+         
+       </div>
+ 
+     </div>
+
+
+
+
+
+
+
+     <h3 class="text-center text-primary mt-4 mb-2"> 
+      Cancun 
+     
+     </h3>
+     <div class="container w-10 h-auto">
+ 
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+         <div class="carousel-indicators">
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+           <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+ 
+ 
+         <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+         <div class="carousel-inner">
+           <div class="carousel-item active mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0014.jpg" class="d-block w-100" alt="Pão de Açúcar">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Seul</h5>
+               <p>Torre de Seúl </p>
+             </div>
+           </div>
+ 
+           <!-- Ilha de Jeju, na Coreia do Sul. -->
+           <div class="carousel-item mb-3">
+             <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0015.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+             <div class="carousel-caption d-none d-md-block">
+               <h5>Ilha de Jeju</h5>
+               <p>Coreia do Sul.</p>
+             </div>
+           </div>
+ 
+          
+ 
+           
+         </div>
+ 
+         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Previous</span>
+         </button>
+         <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+           <span class="carousel-control-next-icon" aria-hidden="true"></span>
+           <span class="visually-hidden">Next</span>
+         </button>
+         
+       </div>
+ 
+     </div>
+
+
+
+
+
+
+
+
+   <!-- TABELA COM LOCAIS MAIS VISITADOS EM 2023 -->
+
+   <h4 id="visitados" class="text-primary">ITINERARIOS  </h4>
+    <p class="lead mb-5">Corea</p>
+ 
+    <div class="tabela">
+      <p class="lead mb-5">Primer dia</p>
+   <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Horarios </th>
+        <th scope="col">Actividades </th>
+        <th scope="col">Observaciones </th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr class="table-primary">
+        <th scope="row">14:00 pm 17:00 pm Sábado </th>
+        <td>Reunión en el Aeropuerto Internacional de la Ciudad de México y cheking</td>
+        <td>.</td>
+      </tr>
+
+      <tr>
+        <th scope="row">7:00 pm </th>
+        <td>Abordaje de avión </td>
+        <td>.</td>
+      </tr>
+
+      <tr class="table-primary">
+        <th scope="row">7: 30 am del lunes </th>
+        <td>Llegada al Aeropuerto Incheon (ICN)</td>
+        <td>.</td>
+      </tr>
+
+      <tr>
+        <th scope="row">7:30 am 8:20 am </th>
+        <td>Traslado a hotel nine tree premier hotel isadong </td>
+        <td>El recorrido se llevará a cabo en camión</td>
+      </tr>
+
+      <tr class="table-primary">
+        <th scope="row">8:20 am 10:00 am</th>
+        <td>Tiempo para desempacar y desayunar en el hotel</td>
+        <td>.</td>
+      </tr>
+
+      <tr>
+        <th scope="row">10:00 am 10: 20 am</th>
+        <td>Traslado a Bukchon Hanok Village</td>
+        <td>.</td>
+      </tr>
+
+      <tr class="table-primary">
+        <th scope="row">10: 20 am  11: 30 am </th>
+        <td>Visita a Bukchon Hanok Village
+          Observación de un pueblo con casas tradicionales coreanas 
+          Visita talleres artesanos 
+          </td>
+        <td>.</td>
+      </tr>
+
+      <tr>
+        <th scope="row">11:30 am 
+          12: 20 pm 
+          </th>
+        <td>Traslado al museo de Corea </td>
+        <td>Recorrido en metro</td>
+      </tr>
+
+      <tr class="table-primary">
+        <th scope="row">12:20pm 
+          15:30 pm 
+          </th>
+        <td>Recorrido del Museo Nacional de Corea, Corea del Sur</td>
+        <td>.</td>
+      </tr>
+
+      <tr>
+        <th scope="row">15:30 pm 
+          15: 50 pm 
+          </th>
+        <td>Traslado a Dongdaemun Design Plaza</td>
+        <td>Recorrido en metro</td>
+      </tr>
+
+      <tbody>
+        <tr class="table-primary">
+          <th scope="row">15: 50 pm 
+            16: 40 pm</th>
+          <td>Comida libremente</td>
+          <td>.</td>
+        </tr>
+  
+        <tr>
+          <th scope="row">16: 40 pm 
+            20:20 pm </th>
+          <td>Visita a Dongdaemun Design Plaza
+            sala de exposiciones, una sala de conferencias, un museo de diseño, el laboratorio de diseño, la sala de la academia, el centro de medios, la sala de seminarios. </td>
+          <td>.</td>
+        </tr>
+      
+        <tbody>
+          <tr class="table-primary">
+            <th scope="row">20:20pm 
+              20:40 pm</th>
+            <td>Traslado al hotel nine tree premier hotel isadong</td>
+            <td>Recorrido en metro</td>
+          </tr>
+    
+          <tr>
+            <th scope="row">20: 40 </th>
+            <td>Fin de recorrido </td>
+            <td>.</td>
+          </tr>
+
+    </tbody>
+
+    
+  </table>
+  </div>
+
+ <!-- MANUAL DO VIAJANTE -->
+
+  <div class="tabela">
+    <p class="lead mb-5">SEGUNDO DIA</p>
+ <table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Horarios </th>
+      <th scope="col">Actividades </th>
+      <th scope="col">Observaciones </th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr class="table-primary">
+      <th scope="row">14:00 pm 17:00 pm Sábado </th>
+      <td>Reunión en el Aeropuerto Internacional de la Ciudad de México y cheking</td>
+      <td>.</td>
+    </tr>
+
+    <tr>
+      <th scope="row">8:30 9:20 </th>
+      <td>Desayuno libremente </td>
+      <td>Np</td>
+    </tr>
+
+    <tr class="table-primary">
+      <th scope="row">9:20am 11:30am </th>
+      <td>Gyeongbokgung:
+        Visita el Salón del Trono y el Pabellón Flotante
+        Explore los cuartos y la biblioteca de Royal Living
+        Mira el cambio de guardia 
+        </td>
+      <td>Los niños (seis y menores), las personas de la tercera edad (mayores de 65 años) y cualquier persona que use hanbok entran gratis.</td>
+    </tr>
+
+    <tr>
+      <th scope="row">11:30 am 
+        12: 55 pm
+        </th>
+      <td>Desplazamiento a 
+        namsangol hanok village
+        </td>
+      <td>No vomitar </td>
+    </tr>
+
+    <tr class="table-primary">
+      <th scope="row">12: 55pm
+        14: 30 pm 
+        </th>
+      <td>namsangol hanok village
+        Visita a El Pabellón principal
+        observación de las casas tradicionales coreanas llamadas hanok.
+        Visita a la capsula del tiempo
+        </td>
+      <td>Entrada gratuita</td>
+    </tr>
+
+    <tr>
+      <th scope="row">10:00 am 10: 20 am</th>
+      <td>Traslado a Bukchon Hanok Village</td>
+      <td>.</td>
+    </tr>
+
+    <tr class="table-primary">
+      <th scope="row">10: 20 am  11: 30 am </th>
+      <td>Visita a Bukchon Hanok Village
+        Observación de un pueblo con casas tradicionales coreanas 
+        Visita talleres artesanos 
+        </td>
+      <td>.</td>
+    </tr>
+
+    <tr>
+      <th scope="row">11:30 am 
+        12: 20 pm 
+        </th>
+      <td>Traslado al museo de Corea </td>
+      <td>Recorrido en metro</td>
+    </tr>
+
+    <tr class="table-primary">
+      <th scope="row">12:20pm 
+        15:30 pm 
+        </th>
+      <td>Recorrido del Museo Nacional de Corea, Corea del Sur</td>
+      <td>.</td>
+    </tr>
+
+    <tr>
+      <th scope="row">15:30 pm 
+        15: 50 pm 
+        </th>
+      <td>Traslado a Dongdaemun Design Plaza</td>
+      <td>Recorrido en metro</td>
+    </tr>
+
+    <tbody>
+      <tr class="table-primary">
+        <th scope="row">15: 50 pm 
+          16: 40 pm</th>
+        <td>Comida libremente</td>
+        <td>.</td>
+      </tr>
+
+      <tr>
+        <th scope="row">16: 40 pm 
+          20:20 pm </th>
+        <td>Visita a Dongdaemun Design Plaza
+          sala de exposiciones, una sala de conferencias, un museo de diseño, el laboratorio de diseño, la sala de la academia, el centro de medios, la sala de seminarios. </td>
+        <td>.</td>
+      </tr>
+    
+      <tbody>
+        <tr class="table-primary">
+          <th scope="row">20:20pm 
+            20:40 pm</th>
+          <td>Traslado al hotel nine tree premier hotel isadong</td>
+          <td>Recorrido en metro</td>
+        </tr>
+  
+        <tr>
+          <th scope="row">20: 40 </th>
+          <td>Fin de recorrido </td>
+          <td>.</td>
+        </tr>
+
+  </tbody>
+
+  
+</table>
+</div>
+
+
+  <!-- MANUAL DO VIAJANTE -->
+  <h3 class="text-center text-primary mt-4 mb-2"> 
+    Flyers
+   
+   </h3>
+  
+  <!-- Subtítulo-->    
+  <h3 class="text-center mt-1 mb-5"></h3>
+
+
+
+ 
+  <!-- CARROSSEL / SLIDES-->
+
+  <div class="container w-10 h-auto">
+
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      </div>
+
+
+      <!-- Pão de açúcar, Rio de Janeiro, Brasil -->
+      <div class="carousel-inner">
+        <div class="carousel-item active mb-3">
+          <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0005.jpg" class="d-block w-100" alt="Pão de Açúcar">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Seul</h5>
+            <p>Torre de Seúl </p>
+          </div>
+        </div>
+
+        <!-- Ilha de Jeju, na Coreia do Sul. -->
+        <div class="carousel-item mb-3">
+          <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0006.jpg" class="d-block w-100" alt="Ilha de Jeju, na Coréia do Sul">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Ilha de Jeju</h5>
+            <p>Coreia do Sul.</p>
+          </div>
+        </div>
+
+        <!-- Píer de Iseltwald, Lago de Brienz, na Suíça -->
+        <div class="carousel-item mb-3">
+          <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0007.jpg" class="d-block w-100" alt="Píer de Iseltwald, Lago de Brienz, na Suíça">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Píer de Iseltwald</h5>
+            <p>Lago de Brienz, na Suíça.</p>
+          </div>
+        </div>
+        <div class="carousel-item mb-4">
+          <img class="img-fluid rounded mx-auto d-block img-thumbnail img_slide col-12" src="imagens/0008.jpg" class="d-block w-100" alt="Píer de Iseltwald, Lago de Brienz, na Suíça">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Píer de Iseltwald</h5>
+            <p>Lago de Brienz, na Suíça.</p>
+          </div>
+        </div>
+        
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      
+    </div>
+
+  </div>
+
+  
+  <!-- FOOTER -->
+
+  <!-- Créditos -->
+  <footer>
+    <h4 class="mt-5 mb-1 text-primary">Créditos:</h4>
+    <br>
+    
+    <div class="link_footer mb-5">
+      <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/" target="_blank">Bootstrap 5</a>
+      <br>
+      <a href="https://www.cvc.com.br/destinos/paris-franca" target="_blank">CVC</a>
+      <br>
+      <a href="https://dicasdonossobrasil.com.br/" target="_blank">Dicas do nosso Brasil</a>
+      <br>
+      <a href="https://turismo.eurodicas.com.br/pontos-turisticos-de-berlim/" target="_blank">Eurodicas</a>
+      <br>
+      <a href="https://www.euromonitor.com/" target="_blank">Euromonitor International</a>
+      <br>
+      <a href="https://www.flaticon.com/br/buscar?word=avi%C3%A3o" target="_blank">Flaticon</a>
+      <br>
+      <a href="https://br.freepik.com/" target="_blank">Freepik</a>
+      <br>
+      <a href="https://www.google.com/?&bih=607&biw=1366&prmd=imvnsbtz&hl=pt-BR" target="_blank">Google</a>
+      <br>
+      <a href="https://www.hellotickets.com.br/franca/paris/dicas-para-visitar-a-torre-eiffel/sc-125-2319" target="_blank">Hellotickets</a>
+      <br>
+      <a href="https://www.melhoresdestinos.com.br/" target="_blank">Melhores Destinos</a>
+      <br>
+      <a href="https://www.gov.br/turismo/pt-br" target="_blank">Ministério do Tursimo</a>
+      <br>
+      <a href="https://www.minube.com.br/" target="_blank">Minube</a>
+      <br>
+      <a href="https://mundovastomundo.com.br/" target="_blank">Mundo Vasto Mundo</a>
+      <br>
+      <a href="https://ondeficaremsuaviagem.com/" target="_blank">Onde ficar em sua viagem</a>
+      <br>
+      <a href="https://optimaintercambio.com.br/blog/turismo/10-pontos-turisticos-japao" target="_blank">Optima</a>
+      <br>
+      <a href="https://news.un.org/pt/tags/organizacao-mundial-do-turismo" target="_blank">Organização Mundial do Turismo</a>
+      <br>
+      <a href="https://www.pariscityvision.com/pt/paris/lugares-marcantes-de-paris/torre-eiffel/historia-torre-eiffel" target="_blank">Paris City Vision</a>
+      <br>
+      <a href="https://www.youtube.com/@LuisTavaresCanal/videos" target="_blank">Prof. Luis Tavares</a>
+      <br>
+      <a href="https://www.queroviajarmais.com/" target="_blank">Quero viajar mais</a>
+      <br>
+      <a href="https://viagemeturismo.abril.com.br/tudo-sobre/o-mundo/" target="_blank">Viagem e Turismo</a>
+      <br>
+      <a href="https://pt.wikipedia.org/wiki/Wikip%C3%A9dia:P%C3%A1gina_principal" target="_blank">Wikipédia</a>
+      <br>
+      <a href="https://www.youtube.com/" target="_blank">Youtube</a>
+
+
+    </div>
+  </footer>
+
+
+  <!-- AUTORA -->
+    
+  <!-- text-muted deixa o texto opaco -->
+  <div class="text-center mt-5 mb-1 text-muted">
+    <p class="footer_p_copyright mb-1">2024 &copy; Desenvolvido por Luciene Lima | Projeto sem fins comerciais
+    <a href="https://github.com/lucienelima8" target="_blank"><i class="fa-brands fa-github"></i></a>      
+    </p>
+
+    <p class="small"><a href="mailto:lucienedelima8@gmail.com">lucienedelima8@gmail.com</a></p>
+  
+  </div>
+
+  <!-- Incluindo o Bootstrap 5 via CDN (copiando os links)-->
+  <!-- Bootstrap trabalha com um pouco de JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+  <!-- Pra fazer a foto mudar da Seção Manual do Viajante -->
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Esse trabalho foi feito por Luciene Lima -->
